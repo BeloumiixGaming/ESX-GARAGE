@@ -203,7 +203,7 @@ end
 Citizen.CreateThread(function()
 	while true do
 		Wait(0)
-		if IsControlJustReleased(0, 82) then -- Touche U
+		if IsControlJustReleased(0, 303) then -- Touche U
 			OpenCloseVehicle()
 		end
 	end
@@ -278,7 +278,7 @@ end)
 
 
 --Menu Serrurier
---[[
+
 function OpenSerrurierMenu()
 	ESX.UI.Menu.Open(
 	'default', GetCurrentResourceName(), 'GetKey',
@@ -334,9 +334,9 @@ function OpenSerrurierMenu()
         end
       )
 end
-]]
 
---[[ Create Blips
+
+-- Create Blips
 Citizen.CreateThread(function()
 		local blip = AddBlipForCoord(Config.Zones.place.Pos.x, Config.Zones.place.Pos.y, Config.Zones.place.Pos.z)
 		SetBlipSprite (blip, 134)
@@ -394,7 +394,7 @@ Citizen.CreateThread(function()
 
 		end
 end)
-]]
+
 -- Key Controls
 Citizen.CreateThread(function()
   while true do
@@ -402,7 +402,7 @@ Citizen.CreateThread(function()
     if CurrentAction ~= nil then
 
       SetTextComponentFormat('STRING')
-      AddTextComponentString('Press ~INPUT_CONTEXT~ to Open')
+      AddTextComponentString('Appuyez sur ~INPUT_CONTEXT~ pour faire une paire de clé')
       DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 
       if IsControlJustReleased(0, 38) then

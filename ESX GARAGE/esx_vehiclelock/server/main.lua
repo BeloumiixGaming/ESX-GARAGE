@@ -185,7 +185,7 @@ MySQL.Async.fetchAll(
 			}
 		)
 		end
-		TriggerClientEvent('esx:showNotification', xPlayer.source, "~g~Vous avez donné les clé à l'acheteur ~g~")
+		TriggerClientEvent('esx:showNotification', xPlayer.source, "~g~Vous avez donné les clés à l'acheteur ~g~")
 	end)
 end)
 
@@ -210,8 +210,8 @@ MySQL.Async.execute(
 
 		},
 		function(result)
-				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez un nouvelle paire de clés ! ')
-				TriggerClientEvent('esx:showNotification', _source, 'Clés bien enregistrer ! ')
+				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez une nouvelle paire de clés ! ')
+				TriggerClientEvent('esx:showNotification', _source, 'Clés bien~g~ enregistrées !~s~ ')
 		end)
 end)
 -----------------------------------------------------------------------------------------
@@ -332,7 +332,7 @@ MySQL.Async.execute(
 
 		},
 		function(result)
-				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez recu un double de clés ')
+				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez reçu un double des clés ')
 		end)
 
 end)
@@ -359,8 +359,8 @@ MySQL.Async.execute(
 
 		},
 		function(result)
-				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez un nouvelle pair de clés ! ')
-				TriggerClientEvent('esx:showNotification', _source, 'Clés bien enregistrer ! ')
+				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez un nouvelle paire de clés ! ')
+				TriggerClientEvent('esx:showNotification', _source, 'Clés bien ~g~enregistrées !~s~ ')
 		end)
 
 end)
@@ -472,7 +472,7 @@ MySQL.Async.execute(
 
 		},
 		function(result)
-				TriggerClientEvent('esx:showNotification', xPlayertarget.source, 'Vous avez reçu de nouvelle clé ')
+				TriggerClientEvent('esx:showNotification', xPlayertarget.source, 'Vous avez reçu des nouvelle clés ')
 				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez donné votre clé, vous ne les avez plus !')
 		end)
 end)
@@ -497,7 +497,7 @@ MySQL.Async.execute(
 
 		},
 		function(result)
-				TriggerClientEvent('esx:showNotification', xPlayertarget.source, 'Vous avez reçu un double de clé ')
+				TriggerClientEvent('esx:showNotification', xPlayertarget.source, 'Vous avez reçu un double des clés ')
 				TriggerClientEvent('esx:showNotification', xPlayer.source, 'Vous avez prété votre clé')
 		end)
 
